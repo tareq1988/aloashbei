@@ -1,3 +1,4 @@
+
 ## GrameenPhone Aloashbei API
 
 A PHP Class to send SMS and retrieve phone location with ease.
@@ -38,11 +39,11 @@ A PHP Class to send SMS and retrieve phone location with ease.
     echo $status->SMSStatusResponse->deliveryStatus;
 
 ### Receive SMS
-  $receive = $sms->getSMS( $msg_id );
-  echo 'Sender: ' . $receive->ReceiveSMSResponse->senderMSISDN . '<br>';
-  echo 'Timestamp: ' . $receive->ReceiveSMSResponse->timeStamp . '<br>';
-  echo 'Source Port: ' . $receive->ReceiveSMSResponse->sourcePort . '<br>';
-  echo 'Message: ' . $receive->ReceiveSMSResponse->msgContent . '<br>';
+    $receive = $sms->getSMS( $msg_id );
+    echo 'Sender: ' . $receive->ReceiveSMSResponse->senderMSISDN . '<br>';
+    echo 'Timestamp: ' . $receive->ReceiveSMSResponse->timeStamp . '<br>';
+    echo 'Source Port: ' . $receive->ReceiveSMSResponse->sourcePort . '<br>';
+    echo 'Message: ' . $receive->ReceiveSMSResponse->msgContent . '<br>';
 
 ### Get Phone Location
     include_once 'class.AloashbeiLBS.php';
@@ -59,7 +60,8 @@ A PHP Class to send SMS and retrieve phone location with ease.
     }
 
 ## Blog Post
-Original link to the [release post 1][1], [release post 2][1]
+Original link to the [release post 1][1], [release post 2][2]
 
-[1] : http://tareq.wedevs.com/2010/09/php-class-for-sending-receiving-and-checking-sms-status-with-grameenphones-aloashbei-api/
-[2] : http://tareq.wedevs.com/2010/09/locate-phone-location-with-gp-aloshbei-location-api-and-visualize-with-google-maps-api/
+
+[1]:http://tareq.wedevs.com/2010/09/php-class-for-sending-receiving-and-checking-sms-status-with-grameenphones-aloashbei-api/
+[2]:http://tareq.wedevs.com/2010/09/locate-phone-location-with-gp-aloshbei-location-api-and-visualize-with-google-maps-api/
